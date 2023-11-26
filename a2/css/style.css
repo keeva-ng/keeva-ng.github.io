@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display&family=Dosis:wght@200;300;400;500;600;700;800&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+html{
+    font-family: 'Dosis', sans-serif ;
+}
+
+a {
+    font-family: 'Dosis', sans-serif ;
+}
+
+body {
+    margin: 0;
+}
+
+/************** Main Banner **************/
+
+.menubg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.home_banner {
+    background-image: url(../img/main_banner.jpg);
+    min-height: 580px;
+}
+
+.drinks_banner {
+    background-image: url(../img/main_banner_drinks.jpg);
+    min-height: 580px;
+}
+
+.menu_banner {
+    background-image: url(../img/main_banner_menu.jpg);
+    min-height: 580px;
+}
+
+.contact_banner {
+    background-image: url(../img/main_banner_contact.jpg);
+    min-height: 580px;
+}
+/************** Top Menu bar **************/
+
+.menu_wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #ffffffd5;
+    justify-content: space-evenly ;
+}
+
+.logo img {
+    display: flex;
+    height: 80px;
+}
+
+.navigation {
+    width: auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    justify-content: space-evenly ;
+}
+
+.navigation ol {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.navigation ol li {
+    float: left;
+    padding: 10px;
+    margin: 0 20px;
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+.navigation a {
+    color: #2C2C2C;
+    text-decoration: none;
+}
+
+/* This is a pseudo-class */
+.navigation a:hover {
+    color: brown;
+    text-decoration: underline;
+}
+
+.current_page a {
+    text-decoration: underline;
+    color: brown;
+}
+
+button {
+    border-radius: 999px;
+    border: 1px solid crimson;
+    padding: 10px 20px;
+    background-color: #ffffff;
+}
+
+button a {
+    color: crimson;
+    font-size: 1.4rem ;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* This is a pseudo-class */
+button a:hover {
+    color: brown;
+}
+
+
+/************** Page: Home **************/
+
+.mainbanner {
+    width: 100%;
+}
+
+.mainbanner img {
+    width: 100%;
+}
+
+
+.features {
+    margin: 10px 40px;
+}
+
+.features h1 {
+    margin-top: 80px;
+    text-align: left;
+}
+
+
+/********** Cakes in flexbox **********/
+/* This is one of the layout style, image on the top, and text placed below */
+.hotwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.hot_item {
+    width: 22%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #e4e4e4;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.hot_item img {
+    width: 100%;
+}
+
+.hot_item_name {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin: 0 ;
+}
+
+.hot_item_price {
+    color: #2C2C2C;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 10px 0 ;
+}
+
+.hot_item_price_deals {
+    color: chocolate;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 10px 0 ;
+}
+/********** End of Cakes in flexbox **********/
+
+.comments_wrapper {
+    margin: 10px 40px;
+
+}
+
+.comments{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+} 
+
+.comments_wrapper h1 {
+    margin-top: 80px;
+    text-align: left;
+}
+
+.comments_item {
+    width: 22%;
+    padding: 8px;
+    border: 1px solid #e4e4e4;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.commemts_star {
+    color: chocolate;
+}
+
+.comments_customer {
+    font-size: 1.4rem;
+}
+
+/********** About Chef **********/
+/* This is one of the layout style, image on the left, and text on right */
+.about_chef {
+    margin: 10px 40px;
+}
+
+.about_chef h1 {
+    margin-top: 80px;
+    text-align: left;
+}
+
+.chef_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.chef_img {
+    width: 40%;
+}
+
+.chef_img img{
+    width: 60%;
+    border: 1px solid #e4e4e4;
+    border-radius: 50%;
+    float: right;
+}
+
+.chef_text {
+    width: 60%;
+    font-size: 1.4rem;
+    margin: 40px;
+    padding-left: 40px;
+    padding-right: 80px;
+    align-items: center;
+    align-content: center;
+    line-height: 3rem;
+}
+
+/* overwritting is used in the chef name "Chef Isabella R." . Overwritting from the original paragraphy style */
+.chef_name {
+    font-family: 'Satisfy', cursive;
+    font-size: 3rem;
+    color: #aa465e;
+}
+/********** End of About Chef **********/
+
+
+.footer {
+    background-color:#fff0f3;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.footer p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+/************** Page: Menu and Drinks  **************/
+
+.menu_page_wrapper {
+    margin: 10px 40px;
+}
+
+.menu_page_wrapper h1 {
+    margin-top: 80px;
+    text-align: left;
+}
+
+.cake_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cake_items {
+    width: 23%;
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-evenly;
+    background-color: #fff0f3;
+    border-radius: 0.4rem;
+    padding: 0.28rem 0.4rem;
+    margin: 0.4rem 0 ;
+}
+
+.cake_img {
+    width: 40%;
+    margin-right: 20px;
+}
+
+.cake_img img {
+    width: 100%;
+    border-radius: 0.4rem;
+}
+
+.cake_detail {
+    width: 60%;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    align-content: space-between;
+    justify-content: space-evenly;
+}
+
+
+/************* Page: Contact Us *************/
+
+.contact {
+    margin: 10px 40px;
+}
+
+.contact h1 {
+    margin-top: 80px;
+    text-align: left;
+}
+
+.contact_map {
+    width: 98%;
+    height: 500px;
+    margin: 0 30px;
+}
+
+.map_wrapper {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+
+.contact_map iframe {
+    width: 100%;
+    height: 380px;
+}
+
+.contact_add {
+    width: 40%;
+    height: 100%;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    border: 1px solid #5c5c5c;
+    border-radius: 0.4rem;
+    padding: 20px;
+}
+
+.contact_social {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.contact_social a {
+    color: brown;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.contact_social a:hover {
+    color:#2C2C2C;
+    text-decoration: none;
+}
+.social_icon {
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+    margin: 6px 20px;
+}
+.social_icon img{
+    width: 30px;
+    margin-right: 6px;
+}
