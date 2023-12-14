@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+body, a, button {
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+}
+
+h1 {font-size: 3rem; font-weight: 900;}
+h2 {font-size: 2.6rem; font-weight: 800;}
+h3 {font-size: 2.2rem; font-weight: 700;}
+h4 {font-size: 1.8rem; font-weight: 600;}
+h5 {font-size: 1.4rem; font-weight: 500;}
+h6 {font-size: 1rem; font-weight: 600;}
+p {font-size: 1rem;}
+
+
+
+/************** Top bar **************/
+.topbar {
+    background-color: #dddddd;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 0.8rem;
+}
+
+
+/************** Header **************/
+.header_wrapper {
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.index_banner {
+    background-image: url(../img/index_banner.jpg);
+}
+
+.feature_banner {
+    background-image: url(../img/feature_banner.jpg);
+}
+
+.buypage_banner {
+    background-image: url(../img/buypage_banner.jpg);
+}
+
+
+/* Menu */
+.menu_wrapper {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #ffffffd5;
+    justify-content: center ;
+}
+
+.logo {
+    display: flex;
+    height: 1rem;
+    margin-left: 1rem;
+    margin-right: 16rem;
+}
+
+nav {
+    display: flex;
+}
+
+nav ol {
+    list-style-type: none;
+}
+
+nav ol li {
+    float: left;
+    margin: 0px 1rem;
+    font-size: 1rem;
+}
+
+nav ol li a {
+    text-decoration: none;
+    padding: 0.4rem 1rem;
+    color: #141414;
+}
+
+nav ol li a:hover {
+    background-color: #141414;
+    color: #ffffff;
+    transition-duration: 0.4s;
+}
+
+.current_page {
+    background-color: #141414;
+    color: #ffffff;
+    margin: 0;
+    padding: 0.4rem 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+button {
+    font-size: 1rem;
+    margin: 1.4rem 5rem;
+    padding: 0.5rem 2rem ;
+    border-radius: 999px;
+    border: 0px ;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    text-align: center;
+    background-color: #141414;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #ffffff;
+    background-color: rgb(56, 0, 119); 
+}
+
+
+/* Hero Text */
+
+.herotext {
+    text-align: right;
+    position: absolute;
+    top: 55%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    color: #141414;
+}
+
+.herotext_tagline {
+    color: #333333;
+}
+
+.hero_tagline_special {
+    font-style: italic;
+    
+}
+
+.herotext button {
+    border: 0px;
+    display: inline-block;
+    padding: 0.8rem  2rem;
+    color: #141414;
+    background-color: #ddd;
+    text-align: center;
+    margin-right: 0px;
+    cursor: pointer;
+  }
+  
+  .herotext button:hover {
+    background-color: #141414;
+    color: #ffffff;
+  }
+
+
+
+/************** Hero Product **************/
+/************** Sketch Community **************/
+.hero_product_wrapper, .community_wrapper {
+    width: 100%;
+    background-color: #e9e9e9;
+}
+
+
+.hero_product, .community {
+    margin: 0 6rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    align-items: center;
+}
+
+.hero_product h5, .community h5 {
+    margin: 0.2rem auto;
+}
+
+.hero_product h6, .community h6 {
+    margin: 0.2rem auto;
+}
+
+.hero_product button, .community button {
+    margin: 1rem 0;
+}
+
+.hero_product div, .community div{
+    height: auto;
+    flex: 5;
+    float: left;
+    margin: 5rem 0.2rem;
+    padding: 1rem;
+}
+
+
+.hero_product img, .community img {
+    width: 100%;
+    cursor: pointer;
+}
+
+
+
+/************** Customer Reviews **************/
+.cs_review_wrapper {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.cs_review_wrapper h5 {
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+.cs_review {
+    margin: 0 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    align-items: center;    
+}
+
+.cs_review div{
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0.3rem 0.3rem #333333;
+    border: 1px solid #ddd;
+    height: auto;
+    flex: 4;
+    float: left;
+    margin: 0rem 1rem 6rem 0.2rem;
+    padding: 1rem;
+}
+
+.cs_review h6 {
+    margin: 0.8rem auto;
+}
+
+.cs_review p {
+    margin: 0.8rem auto;
+    font-weight: 700;
+}
+
+.cs_review img {
+    align-content: center;
+}
+
+.cs_profile {
+    border-radius: 50%;
+    width: 30%;
+}
+
+
+
+/**************************************/
+/*************  Buy Page  *************/
+/**************************************/
+
+.buy_product_wrapper {
+    width: 100%;
+}
+
+.buy_product {
+    margin: 3rem 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    align-items: center;    
+}
+
+.buy_product img {
+    width: 100%;
+}
+
+.buy_product h6 {
+    margin: 1.6rem 0;
+}
+
+.buy_product div {
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0.3rem 0.3rem #333333;
+    border: 1px solid #ddd;
+    height: auto;
+    flex: 4;
+    float: left;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.price {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.buy_product div button {
+    margin: 0;
+    width: 100%;
+}
+
+/* Buy option */
+
+#quantity {
+    width: 8rem;
+    padding: 0.2rem;
+    font-size: 1rem;
+    margin: 0.2rem;
+}
+
+#pencil_color {
+    width: 10rem;
+    padding: 0.2rem;
+    font-size: 1rem;
+    margin: 0.4rem;
+}
+
+
+
+/**************************************/
+/***********  Feature Page  ***********/
+/**************************************/
+
+.personalized_wrapper {
+    width: 100%;
+}
+
+.personalized_step {
+    display: grid;
+    grid-template-columns: 1fr 0.2fr 1fr 0.2fr 1fr;
+    grid-template-rows: 100%;
+    align-items: center;    
+    margin: 3rem 8rem;
+}
+
+.personalized_step div {
+    flex: 5;
+    margin: 1rem;
+    text-align: center;
+}
+
+.personalized_step img {
+    width: 240px;
+}
+.personalized_step h5, h6 {
+    margin: 0;
+}
+
+.arrow {
+    width: 80px;
+    margin: 0;
+    padding: 0;
+}
+.arrow img {
+    width: 80px;
+}
+
+
+.description {
+    width: 100%;
+    align-content: flex-start;
+    height: 100%;
+}
+
+.description_wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    float: left;
+}
+
+.des_bg_1 {
+    background-image: url(../img/wood.jpg);
+}
+
+.des_bg_2 {
+    background-image: url(../img/grass.jpg);
+}
+
+.des_bg_3 {
+    background-image: url(../img/makingof.jpg);
+}
+
+
+.left_col {
+    width: 60%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}    
+
+.left_col img {
+    width: 100%;
+}
+
+
+.bg_color_1 {
+    background-color: rgb(255, 236, 211);
+}
+
+.bg_color_2 {
+    background-color: #cecece;
+}
+
+.bg_color_3 {
+    background-color: #ffffea;
+}
+
+
+.right_col {
+    width: 40%;
+    height: auto;
+    margin: 6rem 6rem;
+}
+
+.qouta {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+.qouta button {
+    font-size: 1.2rem;
+}
+
+/************** Footer **************/
+
+.footer_wrapper {
+    width: 100%;
+    background-color: #2b2b2b;
+    padding: 1rem 0 0 0;
+}
+
+.footer {
+    margin: 0 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 100%;
+    align-items: flex-start;    
+}
+
+.footer div {
+    border: 0px solid #fff;
+    height: auto;
+    flex: 5;
+    float: left;
+    margin: 2rem 0.2rem;
+    padding: 1rem;
+}
+
+
+.footer h6 {
+    margin-bottom: 1rem;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.footer ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer ol li {
+    color: #ffffff;
+    font-weight: 300;
+    line-height: 1.6rem;
+}
+
+.footer ol li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer ol li a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/************** Newsletter Email Sign Up **************/
+
+.newsletter p {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+#email {
+    width: 14rem;
+    padding: 0.8rem;
+    background-color: #2b2b2b;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+#signup {
+    padding: 0.8rem;
+}
+
+input::placeholder {
+    font-size: 0.8rem;
+    color:#ffffff;
+}
+
+
+/************** Footer Copyright **************/
+.footer_copyright {
+    background-color: #2b2b2b;
+    color: #ffffff;
+    font-weight: 300;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 2rem 0;
+    margin: 2rem 0 0 0;
+}
